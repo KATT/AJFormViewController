@@ -43,7 +43,7 @@
 }
 -(void)validateAndReturn {
     
-    ALog(@"Subclasses of %@ has to invoke %@ method", NSStringFromClass([self class]) , NSStringFromSelector(@selector(validateAndReturn)));
+    NSLog(@"Subclasses of %@ should invoke %@ method", NSStringFromClass([self class]) , NSStringFromSelector(@selector(validateAndReturn)));
 }
 
 #pragma mark - setControlstates
